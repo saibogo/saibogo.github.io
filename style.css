@@ -1,0 +1,61 @@
+body {
+  font-family: Georgia;
+  font-size: 16px;
+  margin: 0 auto;   /* center content */
+  max-width: 800px; /* limit width */
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+body > div#header{
+margin-bottom: 32px;
+margin-left: auto;
+margin-right: auto;
+width: 25em;
+text-align: center;
+}
+body > div#main{
+
+}
+body > div#footer{
+margin-top: 64px;
+}
+
+div#header > h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+div#header > h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+div#header > p{
+  text-align: center;
+}
+
+div#main > h1{
+  font-size: 36px;
+  text-align: left
+}
+
+div#main > h2{
+  font-size: 32px;
+  text-align: left;
+}
+
+div#main > p{
+  text-align: left;
+  font-style: italic;
+}
+
+div#footer > h3{
+  text-align: center;
+  font-size: 15px;
+}
+
+div#footer > p{
+  text-align: center;
+  font-size: 15px;
+}
