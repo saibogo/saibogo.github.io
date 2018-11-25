@@ -83,3 +83,21 @@ div#footer > p{
   text-align: center;
   font-size: 15px;
 }
+
+div#menu_navigator{
+  text-align: center;
+}
+
+ul#navigator{
+  color: green;
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+ul#navigator > li{
+  display: inline;
+  background-color: gainsboro;
+  border: 2px solid rgba(139, 131, 131, 0.445);
+  border-radius: 5px;
+}

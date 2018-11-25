@@ -3,6 +3,47 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script>
+          function cHandler() {
+            var pageCert = document.getElementById('certificates');
+            var cCertificates = '<a href="https://www.intuit.ru/verifydiplomas/00154286"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"alt="С++ для профессионалов"></a>';
+            cCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00152252"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-505274-ORF.jpg"alt="Введение в C/C++"></a>';
+            pageCert.innerHTML = cCertificates;
+          }
+
+          function pythonHandler() {
+            var pageCert = document.getElementById('certificates');
+            var pCertificates = '<a href="https://www.sololearn.com/Certificate/1073-7148489/pdf/"><img src="https://www.sololearn.com/Certificate/1073-7148489/jpg/" alt="Основы Python 3"></a>';
+            pCertificates += '\n<iframe src="CC_1.pdf"></iframe><iframe src="CC_2.pdf"></iframe><iframe src="CС_3.pdf"></iframe>';
+            pageCert.innerHTML = pCertificates;
+          }
+
+          function htmlHandler() {
+            var pageCert = document.getElementById('certificates');
+            var hCertificates = '<a href="https://www.sololearn.com/Certificate/1014-7148489/pdf/"><img src="https://www.sololearn.com/Certificate/1014-7148489/jpg/" alt="Основы HTML/HTML5"></a>';
+            pageCert.innerHTML = hCertificates;
+          }
+
+          function intelHandler() {
+            var pageCert = document.getElementById('certificates');
+            var iCertificates = '<a href="https://www.intuit.ru/verifydiplomas/00208204"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-560831-ORF.jpg" alt="Оптимизация с использованием ICC" </a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00156010"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-509006-ORF.jpg" alt="Intel MKL"></a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00154968"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507968-ORF.jpg" alt="Intel Atom мобильная разработка"></a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00156163"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-509158-ORF.jpg" alt="Оптимизация с использованием Intel MKL"></a>'
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00156164"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-509159-ORF.jpg" alt="Оптимизация с использованием Intel MKL"></a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00218280"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-570876-ORF.jpg" alt="Оптимизация с использованием ICC"></a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00218281"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-570877-ORF.jpg" alt="Оптимизация с использованием ICC"></a>';
+            iCertificates += '\n<a href="https://www.intuit.ru/verifydiplomas/00154722"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>';
+            pageCert.innerHTML = iCertificates;
+          }
+
+          function anyHandler() {
+            var pageCert = document.getElementById('certificates');
+            var aCertificates = '<a href="https://www.intuit.ru/verifydiplomas/00171898"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-524806-ORF.jpg" alt="Вступительный тест в фундаментальную информатику"></a>';
+            pageCert.innerHTML = aCertificates;
+          }
+
+        </script>  
         <style>
             @import "style.css"
         </style>
@@ -73,7 +114,19 @@
             <li>Знакомство с редакторами кода/IDE: PyCharm, IntelejinIDEA, VSCode, Eclipse</li>
             </ul>
             <h1>Дипломы и сертификаты</h1>
-            <p>
+            
+            <div id="menu_navigator">
+              <ul id="navigator">
+              <li onclick="cHandler()">C / C++</li>
+              <li onclick="pythonHandler()">Python</li>
+              <li onclick="htmlHandler()">HTML</li>
+              <li onclick="intelHandler()">Intel</li>
+              <li onclick="anyHandler()">Прочее</li>
+            </ul>
+              </div>
+            
+
+            <p id="certificates">
               <a href="https://www.intuit.ru/verifydiplomas/00154286">
                 <img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"
                 alt="С++ для профессионалов">
