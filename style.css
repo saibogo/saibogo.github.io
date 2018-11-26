@@ -101,3 +101,7 @@ ul#navigator > li{
   border: 2px solid rgba(139, 131, 131, 0.445);
   border-radius: 5px;
 }
+
+li > a {
+  color: green;
+}
