@@ -15,33 +15,47 @@
                 '<a href="https://www.intuit.ru/verifydiplomas/00156164"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-509159-ORF.jpg" alt="Оптимизация с использованием Intel MKL"></a>',
                 '<a href="https://www.intuit.ru/verifydiplomas/00218280"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-570876-ORF.jpg" alt="Оптимизация с использованием ICC"></a>',
                 '<a href="https://www.intuit.ru/verifydiplomas/00218281"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-570877-ORF.jpg" alt="Оптимизация с использованием ICC"></a>',
-                '<a href="https://www.intuit.ru/verifydiplomas/00154722"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>']
-            }
+                '<a href="https://www.intuit.ru/verifydiplomas/00154722"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>'],
+            
+                select: function(name) {
+                  var keys = new Set(Object.keys(this));
+                  keys.delete('select');
+                  keys.delete('toHtml');
+                  var result = [];
+                  result = name === 'all' ? Array.from(keys).reduce((acc, key) => ([...acc, this[key]]), []) : result;
+                  result = keys.has(name) ? this[name] : result;
+                  return result;
+                },
+
+                toHtml: function(name) {
+                  return this.select(name).join('\n');
+                }
+              }
 
           function getPageCertification() {
             return document.getElementById('certificates');
           }
 
           function cHandler() {
-            getPageCertification().innerHTML = certificateLinks.cCertificates.join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('cCertificates');
           }
 
           function pythonHandler() {
-            getPageCertification().innerHTML = certificateLinks.pCertificates.join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('pCertificates');
           }
 
           function htmlHandler() {
-            getPageCertification().innerHTML = certificateLinks.hCertificates.join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('hCertificates');
           }
 
           function intelHandler() {
-            getPageCertification().innerHTML = certificateLinks.iCertificates.join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('iCertificates');
           }
 
           function anyHandler() {
-            getPageCertification().innerHTML = certificateLinks.aCertificates.join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('aCertificates');
           }
 
           function allHandler() {
-            getPageCertification().innerHTML = Object.keys(certificateLinks).reduce((acc, key) => ([...acc, certificateLinks[key]]), []).join('\n');
+            getPageCertification().innerHTML = certificateLinks.toHtml('all');
           }
