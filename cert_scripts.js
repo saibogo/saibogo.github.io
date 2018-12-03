@@ -43,12 +43,13 @@
           }
 
           function listElementNames() {
-            document.getElementById('cpp').innerHTML = `C / C++ (${certificateLinks.countInCategory('cCertificates')})`;
-            document.getElementById('python').innerHTML = `Python (${certificateLinks.countInCategory('pCertificates')})`;
-            document.getElementById('html').innerHTML = `HTML (${certificateLinks.countInCategory('hCertificates')})`;
-            document.getElementById('intel').innerHTML = `Intel (${certificateLinks.countInCategory('iCertificates')})`;
-            document.getElementById('any').innerHTML = `Прочее (${certificateLinks.countInCategory('aCertificates')})`;
-            document.getElementById('all').innerHTML = `Все (${certificateLinks.countInCategory('all')})`;
+            var structure = [['cpp', 'C/C++', 'cCertificates'],
+              ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
+              ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
+            structure.forEach(function(subArr) {
+              var [id, value, key] = subArr;
+              document.getElementById(id).innerHTML = `${value}(${certificateLinks.countInCategory(key)})`;
+            });
           }
           
           function baseHandler(key) {
