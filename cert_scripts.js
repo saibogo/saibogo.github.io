@@ -59,35 +59,15 @@
           function createListCertificates() {
             var listMenu = document.getElementById('navigator');
             var listElems = {
-              cpp: 'cHandler',
-              python: 'pythonHandler',
-              html: 'htmlHandler',
-              intel: 'intelHandler',
-              any: 'anyHandler',
-              all: 'allHandler'
+              cpp: 'baseHandler(\'cCertificates\')',
+              python: 'baseHandler(\'pCertificates\')',
+              html: 'baseHandler(\'hCertificates\')',
+              intel: 'baseHandler(\'iCertificates\')',
+              any: 'baseHandler(\'aCertificates\')',
+              all: 'allHandler()'
             }
-            var resultList = Object.keys(listElems).map(key => `<li><a onclick="${listElems[key]}()" id="${key}"></a></li>`);
+            var resultList = Object.keys(listElems).map(key => `<li><a onclick="${listElems[key]}" id="${key}"></a></li>`);
             listMenu.innerHTML = resultList.join('');
-          }
-
-          function cHandler() {
-            baseHandler('cCertificates');
-          }
-
-          function pythonHandler() {
-            baseHandler('pCertificates');
-          }
-
-          function htmlHandler() {
-            baseHandler('hCertificates');
-          }
-
-          function intelHandler() {
-            baseHandler('iCertificates');
-          }
-
-          function anyHandler() {
-            baseHandler('aCertificates');
           }
 
           function allHandler() {
