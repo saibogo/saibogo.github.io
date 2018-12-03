@@ -55,6 +55,20 @@
             getPageCertification().innerHTML = certificateLinks.toHtml(key);
           }
 
+          function createListCertificates() {
+            var listMenu = document.getElementById('navigator');
+            var listElems = {
+              cpp: 'cHandler',
+              python: 'pythonHandler',
+              html: 'htmlHandler',
+              intel: 'intelHandler',
+              any: 'anyHandler',
+              all: 'allHandler'
+            }
+            var resultList = Object.keys(listElems).map(key => `<li><a onclick="${listElems[key]}()" id="${key}"></a></li>`);
+            listMenu.innerHTML = resultList.join('');
+          }
+
           function cHandler() {
             baseHandler('cCertificates');
           }
@@ -76,6 +90,7 @@
           }
 
           function allHandler() {
+            createListCertificates();
             baseHandler('all');
             listElementNames();
           }
