@@ -18,6 +18,8 @@
                   '<a href="https://www.intuit.ru/verifydiplomas/00218281"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-570877-ORF.jpg" alt="Оптимизация с использованием ICC"></a>',
                   '<a href="https://www.intuit.ru/verifydiplomas/00154722"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>'],
 
+                  jsCertificates: ['<a href="https://www.sololearn.com/Certificate/1024-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1024-7148489/jpg/" alt="Основы JS"></a>'],
+
                 },
 
                 select: function(name) {
@@ -45,6 +47,7 @@
           function listElementNames() {
             var structure = [['cpp', 'C/C++', 'cCertificates'],
               ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
+              ['javascript', 'JS', 'jsCertificates'],
               ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
@@ -63,6 +66,7 @@
               python: 'baseHandler(\'pCertificates\')',
               html: 'baseHandler(\'hCertificates\')',
               intel: 'baseHandler(\'iCertificates\')',
+              javascript: 'baseHandler(\'jsCertificates\')',
               any: 'baseHandler(\'aCertificates\')',
               all: 'allHandler()'
             }
