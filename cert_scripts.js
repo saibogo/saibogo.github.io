@@ -21,6 +21,8 @@
 
                   jsCertificates: ['<a href="https://www.sololearn.com/Certificate/1024-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1024-7148489/jpg/" alt="Основы JS"></a>'],
 
+                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="https://www.sololearn.com/Certificate/SQL/jpg/" alt="SQL Base"></a>']
+
                 },
 
                 select: function(name) {
@@ -48,7 +50,7 @@
           function listElementNames() {
             var structure = [['cpp', 'C/C++', 'cCertificates'],
               ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
-              ['javascript', 'JS', 'jsCertificates'],
+              ['javascript', 'JS', 'jsCertificates'], ['sql', 'SQL', 'sqlCertificates'],
               ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
@@ -69,6 +71,7 @@
               intel: 'baseHandler(\'iCertificates\')',
               javascript: 'baseHandler(\'jsCertificates\')',
               any: 'baseHandler(\'aCertificates\')',
+              sql: 'baseHandler(\'sqlCertificates\')',
               all: 'allHandler()'
             }
             var resultList = Object.keys(listElems).map(key => `<li><a onclick="${listElems[key]}" id="${key}"></a></li>`);
