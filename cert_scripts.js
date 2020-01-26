@@ -21,6 +21,8 @@
 
                   jsCertificates: ['<a href="https://www.sololearn.com/Certificate/1024-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1024-7148489/jpg/" alt="Основы JS"></a>'],
 
+                  jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="https://www.sololearn.com/Certificate/Java/jpg/" alt="Java Tutorial"></a>'],
+
                   sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="https://www.sololearn.com/Certificate/SQL/jpg/" alt="SQL Base"></a>']
 
                 },
@@ -50,7 +52,7 @@
           function listElementNames() {
             var structure = [['cpp', 'C/C++', 'cCertificates'],
               ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
-              ['javascript', 'JS', 'jsCertificates'], ['sql', 'SQL', 'sqlCertificates'],
+              ['javascript', 'JS', 'jsCertificates'], ['sql', 'SQL', 'sqlCertificates'], ['java', 'Java', 'jCertificates'],
               ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
@@ -70,6 +72,7 @@
               html: 'baseHandler(\'hCertificates\')',
               intel: 'baseHandler(\'iCertificates\')',
               javascript: 'baseHandler(\'jsCertificates\')',
+              java: 'baseHandler(\'jCertificates\')',
               any: 'baseHandler(\'aCertificates\')',
               sql: 'baseHandler(\'sqlCertificates\')',
               all: 'allHandler()'
