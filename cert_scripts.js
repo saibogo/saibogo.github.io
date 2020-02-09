@@ -8,7 +8,9 @@
                   '<a href="https://www.sololearn.com/Certificate/C/jpg/"><img src="https://www.sololearn.com/Certificate/C/jpg/"></a>'],
 
                   pCertificates: ['<a href="https://www.sololearn.com/Certificate/1073-7148489/pdf/"><img src="https://www.sololearn.com/Certificate/1073-7148489/jpg/" alt="Основы Python 3"></a>',
-                    '<iframe src="CC_1.pdf"></iframe>', '<iframe src="CC_2.pdf"></iframe>', '<iframe src="CС_3.pdf"></iframe>'], 
+                    '<iframe src="CC_1.pdf"></iframe>', '<iframe src="CC_2.pdf"></iframe>', '<iframe src="CС_3.pdf"></iframe>'],
+
+                  phpCertificates: ['<a href="https://www.sololearn.com/Certificate/1059-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1059-7148489/jpg/" alt="Основы PHP"></a>'],
 
                   iCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00208204"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-560831-ORF.jpg" alt="Оптимизация с использованием ICC" </a>',
                   '<a href="https://www.intuit.ru/verifydiplomas/00156010"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-509006-ORF.jpg" alt="Intel MKL"></a>',
@@ -53,6 +55,7 @@
             var structure = [['cpp', 'C/C++', 'cCertificates'],
               ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
               ['javascript', 'JS', 'jsCertificates'], ['sql', 'SQL', 'sqlCertificates'], ['java', 'Java', 'jCertificates'],
+              ['php', 'PHP', 'phpCertificates'],
               ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
@@ -73,6 +76,7 @@
               intel: 'baseHandler(\'iCertificates\')',
               javascript: 'baseHandler(\'jsCertificates\')',
               java: 'baseHandler(\'jCertificates\')',
+              php: 'baseHandler(\'phpCertificates\')',
               any: 'baseHandler(\'aCertificates\')',
               sql: 'baseHandler(\'sqlCertificates\')',
               all: 'allHandler()'
