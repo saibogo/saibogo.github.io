@@ -5,11 +5,11 @@
                   hCertificates: ['<a href="https://www.sololearn.com/Certificate/1014-7148489/pdf/"><img src="https://www.sololearn.com/Certificate/1014-7148489/jpg/" alt="Основы HTML/HTML5"></a>'],
                   cCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00154286"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"alt="С++ для профессионалов"></a>',
                     '<a href="https://www.intuit.ru/verifydiplomas/00152252"><img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-505274-ORF.jpg"alt="Введение в C/C++"></a>',
-                  '<a href="https://www.sololearn.com/Certificate/C/jpg/"><img src="CSoloLearn.jpg"></a>',
-                  '<a href="https://www.sololearn.com/Certificate/1051-7148489/pdf/"><img src="CPPSoloLearn.jpg"></a>'],
+                  '<a href="https://www.sololearn.com/Certificate/C/jpg/"><img src="img/CSoloLearn.jpg"></a>',
+                  '<a href="https://www.sololearn.com/Certificate/1051-7148489/pdf/"><img src="img/CPPSoloLearn.jpg"></a>'],
 
                   pCertificates: ['<a href="https://www.sololearn.com/Certificate/1073-7148489/pdf/"><img src="https://www.sololearn.com/Certificate/1073-7148489/jpg/" alt="Основы Python 3"></a>',
-                    '<iframe src="CC_1.pdf"></iframe>', '<iframe src="CC_2.pdf"></iframe>', '<iframe src="CС_3.pdf"></iframe>'],
+                    '<iframe src="pdf/CC_1.pdf"></iframe>', '<iframe src="pdf/CC_2.pdf"></iframe>', '<iframe src="pdf/CС_3.pdf"></iframe>'],
 
                   phpCertificates: ['<a href="https://www.sololearn.com/Certificate/1059-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1059-7148489/jpg/" alt="Основы PHP"></a>'],
 
@@ -24,9 +24,9 @@
 
                   jsCertificates: ['<a href="https://www.sololearn.com/Certificate/1024-7148489/jpg/"><img src="https://www.sololearn.com/Certificate/1024-7148489/jpg/" alt="Основы JS"></a>'],
 
-                  jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
+                  jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="img/JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
 
-                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="SQLSoloLearn.jpg" alt="SQL Base"></a>']
+                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="img/SQLSoloLearn.jpg" alt="SQL Base"></a>']
 
                 },
 
