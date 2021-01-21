@@ -1,14 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: Georgia;
   font-size: 16px;
-  color: darkgreen;
+  color:firebrick;
   margin: 0 auto;   /* center content */
   max-width: 1000px; /* limit width */
   line-height: 1.5;
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: gainsboro;
+  background-image: url("../img/background/background1.jpg");
+  background-size: 100%;
 }
+
 body > div#header{
 margin-bottom: 32px;
 margin-left: auto;
@@ -16,9 +24,7 @@ margin-right: auto;
 width: 25em;
 text-align: center;
 }
-body > div#main{
 
-}
 body > div#footer{
 margin-top: 64px;
 }
