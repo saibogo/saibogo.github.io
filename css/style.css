@@ -17,6 +17,76 @@ body {
   background-size: 100%;
 }
 
+p {
+  text-indent: 1em;
+}
+
+p#certificates {
+  text-indent: 0;
+}
+
+h3.text-left {
+  margin-left: 1.6em;
+}
+
+a{
+  color: brown;
+}
+a:visited{
+  color: darkgray;
+}
+a:active{
+  color: crimson;
+}
+a:hover{
+  color: darkorange;
+  font-size: 18px;
+}
+
+a > img{
+  height: 300px;
+  width: 450px;
+}
+
+#navigation-menu-list {
+  width: 100%;
+}
+
+.navigation-item {
+  width: 20%;
+  font-size: 1.4em;
+}
+
+a.navigation-link {
+  color: teal;
+  text-decoration: none;
+}
+
+a.navigation-link:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  color:blueviolet;
+}
+
+.div-section {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.info-p {
+  margin: 1.6em;
+}
+
+.return-link {
+  width: 100%;
+}
+
+a.go-to-menu {
+  padding-left: 45%;
+  color: teal;
+  text-decoration: none;
+}
+
 body > div#header{
 margin-bottom: 32px;
 margin-left: auto;
@@ -57,24 +127,7 @@ div#main > p{
   text-align: left;
   font-style: italic;
 }
-a{
-  color: brown;
-}
-a:visited{
-  color: darkgray;
-}
-a:active{
-  color: crimson;
-}
-a:hover{
-  color: darkorange;
-  font-size: 18px;
-}
 
-a > img{
-  height: 300px;
-  width: 450px;
-}
 iframe{
   height: 300px;
   width: 450px;

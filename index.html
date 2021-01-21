@@ -12,78 +12,134 @@
     <body onload="allHandler()">
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+       <!--HEADER-->
+       <header>
+        <nav class="navbar navbar-default" id="navigation-bar">
+              <ul class="nav nav-pills" id="navigation-menu-list">
+                <li class="active navigation-item text-center">
+                  <a href="#about" class="navigation-link">О себе</a>
+                </li>
+                <li class="navigation-item text-center">
+                  <a href="#works" class="navigation-link">Опыт работы</a>
+                </li>
+                <li class="navigation-item text-center">
+                  <a href="#skills" class="navigation-link">Навыки</a>
+                </li>
+                <li class="navigation-item text-center">
+                  <a href="#" class="navigation-link">Сертификаты</a>
+                </li>
+                <li class="navigation-item text-center">
+                  <a href="#" class="navigation-link">Репозитории</a>
+                </li>
+              </ul>
+            
+        </nav>
+    </header>
+    <!-- END HEADER-->
         <div id="header">
             <h1>Андрей Глейх</h1>
-            <h3>Веб-разработчик</h3>
-            <p>
-                <a href="mailto:gleykh@gmail.com"> Email</a>, <a href ="https://saibogo.github.io/">Рабочий веб-сайт</a>
-            </p>
+            <h3>Программист-любитель</h3>
             
         </div>
         <div id="main">
-            <p>
-            Впервые увлекся программированием еще в школе. Спектрум и его ассемблер. В дальнейшем пришлось пойти совсем по другому
-            жизненному пути - я инженер-энергетик. Однако увлечение не оставил. QBasic. VBA.  Неплохо знаю Python 3. Писал в свое время на Java, C/C++.
-            Пробовал себя в Dr.Racket, SML, LISP, Haslell.
-            Постоянно приходится работать с shell и Linux-системами.
-            </p>
-            <h1>Опыт работы</h1>
-            <hr>
-            <h2>Богословский алюминиевый завод</h2>
-            <ul>
-              <li>Оператор пневмотранспорта.(2000-2001 года)</li>
-              <li>Электромеханик. Ремонт двигательного, осветительного и силового электрооборудования. (2001 - 2003 года)</li>
-            </ul>
-            <h2>Компания Малахит</h2>
-            <ul>
-              <li>Инженер технической службы компании "Малахит" (Мак Пик ТЦ Дирижабль). (2003-2004 года)</li>
-              <li>Главный инженер технической службы ресторана "SUNDAY"(2004-2006 года)</li>
-              <li>Главный энергетик Екатеринбургского отделения компании "Малахит"(по текущее время)</li>
-            </ul>
-            <p>Обязанности: Контроль энергоресурсов и полный спектр взаимоотношений с энергоснабжающими и коммунальными
-              организациями. Взаимодействие с Арендаторами. Выдача и согласование Технических Условий.
-              Ремонт технологического оборудования. Ремонт инженерных сетей.
-            </p>
-            <h1>Образование и вспомогательные навыки</h1>
-            <ul>
-              <li>УГТУ-УПИ, неоконченное высшее - "Электроэнергетические системы и сети"</li>
-              <li>ПТК - Электромонтер 4 разряд</li>
-              <li>Ежегодная аттестация ФСТАЭН 4гр. электробезопасности до 1000 Вольт</li>
-              <li>Ежегодная аттестация ФСТАЭН по эксплуатации теплопотребляющих установок</li>
-              <li>Многочисленные курсы в проекте Coursera(Python, Java и тд)</li>
-              <li>Многочисленные курсы в проекте Интуит, в том числе с использованием ICC</li>
-              <li>Подготовка на сайтах олимпиадного программирования acmp.ru, informatics, timus(Python, Java, C++)</li>
-              <li>Пайка электронных компонентов и изготовление простых электронных схем(до 2-3 микросхем включительно)</li>
-              <li>Монтаж электрооборудования и сетей до 1000 Вольт практически любой сложности</li>
-              <li>Монтаж сантехнических и отопительных сетей</li>
-              <li>Небольшой опыт сварных работ</li>
-            </ul>
-            <h1>Краткая информация о себе</h1>
-            <ul>
-              <li>Дата рождения: 21 июля 1980 года</li>
-              <li>Место проживания: Екатеринбург</li>
-              <li>Семейное положение: Женат, детей нет. Есть кот)))</li>
-              <li>водительские права: Категория "B"</li>
-            </ul>
-            <h1>Навыки в сфере IT</h1>
-            <hr>
-            <ul>
-            <li>Имел опыт со следующими ОС семейства GNU/Linux: Debian, Mandriva, Ubuntu, Gentoo </li>
-            <li>Семейство BSD: FreeBSD, OpenBSD</li>
-            <li>Семейство Windows: XP, 2000, Vista. 7, 8/8.1, 10, Windows Server 2003, Windows Server 2016</li>
-            <li>Знакомство с языками прогррамирования: Python 2/3, C/C++, Java, Scheme, VBA, Dr. Racket </li>
-            <li>Вспомогательные инструменты: bash/sh, apt, git, Django, MySQL</li>
-            <li>Знакомство с редакторами кода/IDE: PyCharm, IntelejinIDEA, VSCode, Eclipse</li>
-            </ul>
-            <h1>Дипломы и сертификаты</h1>
+          <div class="div-section">
+            <section class="info-section" id="about">
+              <h2 class="text-center">Краткая информация о себе</h2>
+              <p class="info-p">
+                Впервые увлекся программированием еще в школе. Спектрум и его ассемблер. В дальнейшем пришлось пойти совсем по другому
+                жизненному пути - я инженер-энергетик. Однако увлечение не оставил. QBasic. VBA.  Неплохо знаю Python 3. Писал в свое время на Java, C/C++.
+                Пробовал себя в Dr.Racket, SML, LISP, Haslell.
+                Постоянно приходится работать с shell и Linux-системами.
+              </p>
+              
+              <ul class="info-p">
+                <li>Дата рождения: 21 июля 1980 года</li>
+                <li>Место проживания: Екатеринбург</li>
+                <li>Семейное положение: Женат, детей нет. Есть кот)))</li>
+                <li>водительские права: Категория "B"</li>
+              </ul>
+              <div class="return-link">
+                <a href="#navigation-bar" class="go-to-menu">Наверх</a>
+              </div>
+            </section>
+          </div>
+          <br>
+
+          <div class="div-section">
+            <section class="info-section" id="works">
+              <h2 class="text-center">Опыт работы</h2>
+              <h3 class="text-left">Богословский алюминиевый завод</h2>
+              <ul class="info-p">
+                <li>Оператор пневмотранспорта.(2000-2001 года)</li>
+                <li>Электромеханик. Ремонт двигательного, осветительного и силового электрооборудования. (2001 - 2003 года)</li>
+              </ul>
+              <h3 class="text-left">Компания Малахит</h2>
+              <ul class="info-p">
+                <li>Инженер технической службы компании "Малахит" (Мак Пик ТЦ Дирижабль). (2003-2004 года)</li>
+                <li>Главный инженер технической службы ресторана "SUNDAY"(2004-2006 года)</li>
+                <li>Главный энергетик Екатеринбургского отделения компании "Малахит"(по текущее время)</li>
+              </ul>
+              <p class="info-p">Обязанности: Контроль энергоресурсов и полный спектр взаимоотношений с энергоснабжающими и коммунальными
+                организациями. Взаимодействие с Арендаторами. Выдача и согласование Технических Условий.
+                Ремонт технологического оборудования. Ремонт инженерных сетей.
+              </p>
+              <div class="return-link">
+                <a href="#navigation-bar" class="go-to-menu">Наверх</a>
+              </div>
+            </section>
+          </div>
+          <br>
+
+          <div class="div-section">
+            <section class="info-section" id="skills">
+              <h2 class="text-center">Образование и навыки</h2>
+              <h3 class="text-left">Образование и вспомогательные навыки</h3>
+              <ul class="info-p">
+                <li>УГТУ-УПИ, неоконченное высшее - "Электроэнергетические системы и сети"</li>
+                <li>ПТК - Электромонтер 4 разряд</li>
+                <li>Ежегодная аттестация ФСТАЭН 4гр. электробезопасности до 1000 Вольт</li>
+                <li>Ежегодная аттестация ФСТАЭН по эксплуатации теплопотребляющих установок</li>
+                <li>Многочисленные курсы в проекте Coursera(Python, Java и тд)</li>
+                <li>Многочисленные курсы в проекте Интуит, в том числе с использованием ICC</li>
+                <li>Подготовка на сайтах олимпиадного программирования acmp.ru, informatics, timus(Python, Java, C++)</li>
+                <li>Пайка электронных компонентов и изготовление простых электронных схем(до 2-3 микросхем включительно)</li>
+                <li>Монтаж электрооборудования и сетей до 1000 Вольт практически любой сложности</li>
+                <li>Монтаж сантехнических и отопительных сетей</li>
+                <li>Небольшой опыт сварных работ</li>
+              </ul>
             
-            <div id="menu_navigator">
-              <ul id="navigator">
-            </ul>
+              <h3 class="text-left">Навыки в сфере IT</h3>
+              <ul class="info-p">
+                <li>Имел опыт со следующими ОС семейства GNU/Linux: Debian, Mandriva, Ubuntu, Gentoo </li>
+                <li>Семейство BSD: FreeBSD, OpenBSD</li>
+                <li>Семейство Windows: XP, 2000, Vista. 7, 8/8.1, 10, Windows Server 2003, Windows Server 2016</li>
+                <li>Знакомство с языками прогррамирования: Python 2/3, C/C++, Java, Scheme, VBA, Dr. Racket </li>
+                <li>Вспомогательные инструменты: bash/sh, apt, git, Django, MySQL</li>
+                <li>Знакомство с редакторами кода/IDE: PyCharm, IntelejinIDEA, VSCode, Eclipse</li>
+              </ul>
+              <div class="return-link">
+                <a href="#navigation-bar" class="go-to-menu">Наверх</a>
+              </div>
+            </section>
+          </div>
+          <br>
+            
+          <div class="div-section">
+            <section class="info-section" id="diploms">
+              <h2 class="text-center">Дипломы и сертификаты</h2>
+            
+              <div id="menu_navigator">
+                <ul id="navigator">
+                </ul>
               </div>
             
-
-            <p id="certificates"></p>
+              <p id="certificates"></p>
+              <div class="return-link">
+                <a href="#navigation-bar" class="go-to-menu">Наверх</a>
+              </div>
+            </section>
+          </div>            
+            
 
         </div>
         <div id="footer">
