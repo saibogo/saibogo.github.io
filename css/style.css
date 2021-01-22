@@ -6,7 +6,7 @@
 body {
   font-family: Georgia;
   font-size: 16px;
-  color:firebrick;
+  color: rgb(132, 40, 20);
   margin: 0 auto;   /* center content */
   max-width: 1000px; /* limit width */
   line-height: 1.5;
@@ -27,20 +27,6 @@ p#certificates {
 
 h3.text-left {
   margin-left: 1.6em;
-}
-
-a{
-  color: brown;
-}
-a:visited{
-  color: darkgray;
-}
-a:active{
-  color: crimson;
-}
-a:hover{
-  color: darkorange;
-  font-size: 18px;
 }
 
 a > img{
@@ -160,11 +146,21 @@ ul#navigator{
 
 ul#navigator > li{
   display: inline;
-  background-color: gainsboro;
   border: 2px solid rgba(139, 131, 131, 0.445);
   border-radius: 5px;
 }
 
 li > a {
-  color: green;
+  color: teal;
+}
+
+li > a:hover {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#hidden-image {
+  visibility: hidden;
 }
