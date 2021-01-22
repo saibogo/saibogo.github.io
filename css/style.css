@@ -14,7 +14,7 @@ body {
   padding-bottom: 32px;
   background-color: gainsboro;
   background-image: url("../img/background/background1.jpg");
-  background-size: 100%;
+  font-weight: bold;
 }
 
 p {
@@ -44,8 +44,9 @@ a:hover{
 }
 
 a > img{
-  height: 300px;
-  width: 450px;
+ width: 40%;
+ margin-left: 7%;
+ margin-top: 2%;
 }
 
 #navigation-menu-list {
@@ -71,6 +72,7 @@ a.navigation-link:hover {
 .div-section {
   border: 1px solid red;
   border-radius: 3px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .info-p {
@@ -129,8 +131,10 @@ div#main > p{
 }
 
 iframe{
-  height: 300px;
-  width: 450px;
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 2%;
+  height: calc(100vw * 0.35);
 }
 
 div#footer > h3{
