@@ -54,11 +54,12 @@
                   var result = [];
                   result = name === 'all' ? Array.from(keys).reduce((acc, key) => ([...acc, ...this.certificates[key]]), []) : result;
                   result = keys.has(name) ? this.certificates[name] : result;
+
                   //формируем списки без <iframe> и с ним
                   var resultNoIframe = result.filter((a) => (!a.includes('</iframe>')));
                   var resultIframe = result.filter((a) => a.includes('</iframe>'));
-                  //Дальнейшее необходимо для выравнивания
 
+                  //Дальнейшее необходимо для выравнивания
                   if (resultIframe.length > 0 && (resultNoIframe.length > 0 && resultNoIframe.length % 2 != 0)) {
                     resultNoIframe.push('<a href="#"><img id="hidden-image" src="img/background/background1.jpg"></a>');
                   }
