@@ -164,3 +164,20 @@ li > a:hover {
 #hidden-image {
   visibility: hidden;
 }
+
+@media (max-width: 760px) {
+  .navigation-item {
+    font-size: 1em;
+  }
+
+  ul#navigator > li {
+    display:inline-block;
+  }
+}
+
+@media (max-width: 550px) {
+  .navigation-item {
+    font-size: 0.8em;
+  }
+}
+
