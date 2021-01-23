@@ -45,7 +45,9 @@
 
                   jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="img/JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
 
-                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="img/SQLSoloLearn.jpg" alt="SQL Base"></a>']
+                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="img/SQLSoloLearn.jpg" alt="SQL Base"></a>'],
+
+                  engCertificates: ['<a href="https://simpler.link/c/mGl47"><img src="img/eng1.png" alt="English Elementary"></a>']
 
                 },
 
@@ -88,10 +90,16 @@
 
           function listElementNames() {
             var structure = [['cpp', 'C/C++', 'cCertificates'],
-              ['python', 'Python', 'pCertificates'], ['html', 'HTML', 'hCertificates'], ['intel', 'Intel', 'iCertificates'],
-              ['javascript', 'JS', 'jsCertificates'], ['sql', 'SQL', 'sqlCertificates'], ['java', 'Java', 'jCertificates'],
+              ['python', 'Python', 'pCertificates'],
+              ['html', 'HTML', 'hCertificates'],
+              ['intel', 'Intel', 'iCertificates'],
+              ['javascript', 'JS', 'jsCertificates'],
+              ['sql', 'SQL', 'sqlCertificates'],
+              ['java', 'Java', 'jCertificates'],
               ['php', 'PHP', 'phpCertificates'],
-              ['any', 'Прочее', 'aCertificates'], ['all', 'Все', 'all']];
+              ['any', 'Прочее', 'aCertificates'],
+              ['eng', 'English', 'engCertificates'], 
+              ['all', 'Все', 'all']];
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
               document.getElementById(id).innerHTML = `${value}(${certificateLinks.countInCategory(key)})`;
@@ -114,6 +122,7 @@
               php: 'baseHandler(\'phpCertificates\')',
               any: 'baseHandler(\'aCertificates\')',
               sql: 'baseHandler(\'sqlCertificates\')',
+              eng: 'baseHandler(\'engCertificates\')',
               all: 'allHandler()'
             }
             var resultList = Object.keys(listElems).map(key => `<li><a onclick="${listElems[key]}" id="${key}" class="certificates-navigation"></a></li>`);
