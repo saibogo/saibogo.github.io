@@ -35,6 +35,17 @@ a > img{
  margin-top: 2%;
 }
 
+a > img:hover {
+  box-shadow: 8px 8px 8px gray;
+  transition: box-shadow 1.5s ease-in;
+
+}
+
+iframe:hover {
+  box-shadow: 8px 8px 8px gray;
+  transition: box-shadow 1.5s ease-in;
+}
+
 #navigation-menu-list {
   width: 100%;
 }
@@ -159,11 +170,28 @@ li > a:hover {
   color: blueviolet;
   font-size: 1em;
   text-transform: uppercase;
+  transition: color 1.5s ease-in;
 }
 
 #hidden-image {
   visibility: hidden;
 }
+
+
+.repo-link {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: teal;
+}
+
+.repo-link:hover {
+  text-decoration: none;
+  color: blueviolet;
+  text-transform: uppercase;
+  transition: color 1.5s ease-in;
+}
+
+/* For different screen-size*/
 
 @media (max-width: 760px) {
   .navigation-item {
@@ -173,11 +201,19 @@ li > a:hover {
   ul#navigator > li {
     display:inline-block;
   }
+
+  .repo-link {
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 550px) {
   .navigation-item {
     font-size: 0.8em;
+  }
+
+  .repo-link {
+    font-size: 1em;
   }
 }
 
