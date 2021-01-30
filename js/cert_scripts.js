@@ -1,13 +1,24 @@
 
+             var structure = [['cpp', 'C/C++', 'cCertificates'],
+             ['python', 'Python', 'pCertificates'],
+             ['html', 'HTML+CSS3+JS', 'hCertificates'],
+             ['intel', 'Intel', 'iCertificates'],
+             ['javascript', 'JS', 'jsCertificates'],
+             ['sql', 'SQL', 'sqlCertificates'],
+             ['java', 'Java', 'jCertificates'],
+             ['php', 'PHP', 'phpCertificates'],
+             ['any', 'Прочее', 'aCertificates'],
+             ['eng', 'English', 'engCertificates'], 
+             ['all', 'Все', 'all']];
+            
             var certificateLinks = {
                 certificates: {
+                  /*
                   aCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00171898">'+
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-524806-ORF.jpg" alt="Вступительный тест в фундаментальную информатику"></a>'],      
-                  
-                  hCertificates: ['<a href="https://www.sololearn.com/Certificate/1014-7148489/pdf/">'+
-                  '<img src="https://www.sololearn.com/Certificate/1014-7148489/jpg/" alt="Основы HTML/HTML5"></a>',
-                  '<iframe src="pdf/Coursera_HTML_JS_CSS3_Hopkinson.pdf"></iframe>'],
-                  
+                  */
+                  aCertificates: [],
+                  hCertificates: [],
                   cCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00154286">'+
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"alt="С++ для профессионалов"></a>',
                   '<a href="https://www.intuit.ru/verifydiplomas/00152252">'+
@@ -90,17 +101,7 @@
           }
 
           function listElementNames() {
-            var structure = [['cpp', 'C/C++', 'cCertificates'],
-              ['python', 'Python', 'pCertificates'],
-              ['html', 'HTML', 'hCertificates'],
-              ['intel', 'Intel', 'iCertificates'],
-              ['javascript', 'JS', 'jsCertificates'],
-              ['sql', 'SQL', 'sqlCertificates'],
-              ['java', 'Java', 'jCertificates'],
-              ['php', 'PHP', 'phpCertificates'],
-              ['any', 'Прочее', 'aCertificates'],
-              ['eng', 'English', 'engCertificates'], 
-              ['all', 'Все', 'all']];
+           
             structure.forEach(function(subArr) {
               var [id, value, key] = subArr;
               document.getElementById(id).innerHTML = `${value}(${certificateLinks.countInCategory(key)})`;
@@ -131,7 +132,55 @@
           }
 
           function allHandler() {
-            createListCertificates();
-            baseHandler('all');
-            listElementNames();
+            readJSON("json/html.json", 'html');
+            readJSON("json/any.json", 'any');
+
+            setTimeout(() => {
+              createListCertificates();
+              baseHandler('all');
+              listElementNames();
+            }, 3000);
+
+            
           }
+
+          function readJSON(url, nameCertSection) {
+            
+            var myFetch = fetch(url);
+            var result = {};
+
+            myFetch.then(function(response) {
+              if (response.ok) {
+                  response.json().then(function(json) {
+                    data = json;
+                    result = data;
+
+                    var arrayLinks = convertJsonToArray(result);
+
+                    structure.forEach(elem => {
+                      [id, value, key] = elem;
+                      if (id === nameCertSection) {
+                        certificateLinks.certificates[key] = [].concat(arrayLinks);
+                        }
+                      });
+
+                    });
+                } else {
+                  console.log("Not found JSON file!");
+                }
+              });
+              
+            }
+
+            function convertJsonToArray(jsonObject) {
+              var result = [];
+              for (var key in jsonObject) {
+                if (jsonObject[key]["type"] === "a") {
+                  result.push('<a href="' + jsonObject[key]["href"] + '"><img src="' + jsonObject[key]["image"] + '" alt="' + jsonObject[key]["alt"] + '"></a>');
+                } else {
+                  result.push('<iframe src="' + jsonObject[key]["image"] + '"></iframe>');
+                }
+              }
+              return result;
+            }
+
