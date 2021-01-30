@@ -5,7 +5,8 @@
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-524806-ORF.jpg" alt="Вступительный тест в фундаментальную информатику"></a>'],      
                   
                   hCertificates: ['<a href="https://www.sololearn.com/Certificate/1014-7148489/pdf/">'+
-                  '<img src="https://www.sololearn.com/Certificate/1014-7148489/jpg/" alt="Основы HTML/HTML5"></a>'],
+                  '<img src="https://www.sololearn.com/Certificate/1014-7148489/jpg/" alt="Основы HTML/HTML5"></a>',
+                  '<iframe src="pdf/Coursera_HTML_JS_CSS3_Hopkinson.pdf"></iframe>'],
                   
                   cCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00154286">'+
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"alt="С++ для профессионалов"></a>',
