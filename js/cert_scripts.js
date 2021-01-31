@@ -13,10 +13,6 @@
             
             var certificateLinks = {
                 certificates: {
-                  /*
-                  aCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00171898">'+
-                  '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-524806-ORF.jpg" alt="Вступительный тест в фундаментальную информатику"></a>'],      
-                  */
                   aCertificates: [],
                   hCertificates: [],
                   cCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00154286">'+
@@ -26,11 +22,7 @@
                   '<a href="https://www.sololearn.com/Certificate/C/jpg/"><img src="img/CSoloLearn.jpg"></a>',
                   '<a href="https://www.sololearn.com/Certificate/1051-7148489/pdf/"><img src="img/CPPSoloLearn.jpg"></a>'],
 
-                  pCertificates: ['<a href="https://www.sololearn.com/Certificate/1073-7148489/pdf/">'+
-                    '<img src="https://www.sololearn.com/Certificate/1073-7148489/jpg/" alt="Основы Python 3"></a>',
-                    '<iframe src="pdf/CC_1.pdf"></iframe>',
-                     '<iframe src="pdf/CC_2.pdf"></iframe>',
-                     '<iframe src="pdf/CС_3.pdf"></iframe>'],
+                  pCertificates: [],
 
                   phpCertificates: ['<a href="https://www.sololearn.com/Certificate/1059-7148489/jpg/">' +
                    '<img src="https://www.sololearn.com/Certificate/1059-7148489/jpg/" alt="Основы PHP"></a>'],
@@ -134,6 +126,7 @@
           function allHandler() {
             readJSON("json/html.json", 'html');
             readJSON("json/any.json", 'any');
+            readJSON("json/python.json", 'python');
 
             setTimeout(() => {
               createListCertificates();

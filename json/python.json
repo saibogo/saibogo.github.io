@@ -1,0 +1,29 @@
+{
+    "1": {
+        "type": "a",
+        "href": "https://www.sololearn.com/Certificate/1073-7148489/pdf/",
+        "image": "https://www.sololearn.com/Certificate/1073-7148489/jpg/",
+        "alt": "Основы Python 3"
+    },
+
+    "2": {
+        "type": "iframe",
+        "href": "",
+        "image": "pdf/CC_1.pdf",
+        "alt": ""
+    },
+
+    "3": {
+        "type": "iframe",
+        "href": "",
+        "image": "pdf/CC_2.pdf",
+        "alt": ""
+    },
+
+    "4": {
+        "type": "iframe",
+        "href": "",
+        "image": "pdf/Python3.pdf",
+        "alt": ""
+    }
+}
