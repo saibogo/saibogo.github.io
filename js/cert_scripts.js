@@ -44,8 +44,7 @@
                   '<a href="https://www.intuit.ru/verifydiplomas/00154722">'+
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>'],
 
-                  jsCertificates: ['<a href="https://www.sololearn.com/Certificate/1024-7148489/jpg/">'+
-                  '<img src="https://www.sololearn.com/Certificate/1024-7148489/jpg/" alt="Основы JS"></a>'],
+                  jsCertificates: [],
 
                   jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="img/JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
 
@@ -128,6 +127,7 @@
             readJSON("json/any.json", 'any');
             readJSON("json/python.json", 'python');
             readJSON("json/sql.json", 'sql');
+            readJSON("json/js.json", 'javascript');
 
             setTimeout(() => {
               createListCertificates();
