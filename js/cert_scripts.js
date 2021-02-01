@@ -49,7 +49,7 @@
 
                   jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="img/JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
 
-                  sqlCertificates:['<a href="https://www.sololearn.com/Certificate/SQL/jpg/"><img src="img/SQLSoloLearn.jpg" alt="SQL Base"></a>'],
+                  sqlCertificates:[],
 
                   engCertificates: ['<a href="https://simpler.link/c/mGl47"><img src="img/eng1.png" alt="English Elementary"></a>']
 
@@ -127,6 +127,7 @@
             readJSON("json/html.json", 'html');
             readJSON("json/any.json", 'any');
             readJSON("json/python.json", 'python');
+            readJSON("json/sql.json", 'sql');
 
             setTimeout(() => {
               createListCertificates();
