@@ -23,9 +23,7 @@
                   '<a href="https://www.sololearn.com/Certificate/1051-7148489/pdf/"><img src="img/CPPSoloLearn.jpg"></a>'],
 
                   pCertificates: [],
-
-                  phpCertificates: ['<a href="https://www.sololearn.com/Certificate/1059-7148489/jpg/">' +
-                   '<img src="https://www.sololearn.com/Certificate/1059-7148489/jpg/" alt="Основы PHP"></a>'],
+                  phpCertificates: [],
 
                   iCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00208204">'+
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-560831-ORF.jpg" alt="Оптимизация с использованием ICC" </a>',
@@ -45,9 +43,7 @@
                   '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507725-ORF.jpg" alt="Оптимизация с использованием ICC"></a>'],
 
                   jsCertificates: [],
-
-                  jCertificates: ['<a href="https://www.sololearn.com/Certificate/Java/jpg/"><img src="img/JavaSoloLearn.jpg" alt="Java Tutorial"></a>'],
-
+                  jCertificates: [],
                   sqlCertificates:[],
 
                   engCertificates: ['<a href="https://simpler.link/c/mGl47"><img src="img/eng1.png" alt="English Elementary"></a>']
@@ -127,7 +123,9 @@
             readJSON("json/any.json", 'any');
             readJSON("json/python.json", 'python');
             readJSON("json/sql.json", 'sql');
-            readJSON("json/js.json", 'javascript');
+            readJSON("json/javascript.json", 'javascript');
+            readJSON("json/java.json", 'java');
+            readJSON("json/php.json", 'php');
 
             setTimeout(() => {
               createListCertificates();
