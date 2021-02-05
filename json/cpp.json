@@ -1,0 +1,29 @@
+{
+    "1": {
+        "type": "a",
+        "href": "https://www.intuit.ru/verifydiplomas/00154286",
+        "image": "img/intuit/cplusplusINTUIT.jpg",
+        "alt": "C++ для профессионалов"
+    },
+
+    "2": {
+        "type": "a",
+        "href": "https://www.intuit.ru/verifydiplomas/00152252",
+        "image": "img/intuit/CCplusplusTutorial.jpg",
+        "alt": "Введение в C/C++"
+    },
+
+    "3": {
+        "type": "a",
+        "href": "https://www.sololearn.com/Certificate/C/jpg/",
+        "image": "img/CSoloLearn.jpg",
+        "alt": "Введение в C"
+    },
+
+    "4": {
+        "type": "a",
+        "href": "https://www.sololearn.com/Certificate/1051-7148489/pdf/",
+        "image": "img/CPPSoloLearn.jpg",
+        "alt": "Введение в C++"
+    }
+}

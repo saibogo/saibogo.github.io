@@ -15,13 +15,7 @@
                 certificates: {
                   aCertificates: [],
                   hCertificates: [],
-                  cCertificates: ['<a href="https://www.intuit.ru/verifydiplomas/00154286">'+
-                  '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-507293-ORF.jpg"alt="С++ для профессионалов"></a>',
-                  '<a href="https://www.intuit.ru/verifydiplomas/00152252">'+
-                  '<img src="https://www.intuit.ru/sites/default/files/diploma/a/n/d/r/e/Nekommercheskoe_obrazovatelnoe_chastnoe_uchrejdenie_vyisshego_professionalnogo__obrazovaniya__Natsionalnyiy_otkryityiy_universitet__INTUIT_-2-505274-ORF.jpg"alt="Введение в C/C++"></a>',
-                  '<a href="https://www.sololearn.com/Certificate/C/jpg/"><img src="img/CSoloLearn.jpg"></a>',
-                  '<a href="https://www.sololearn.com/Certificate/1051-7148489/pdf/"><img src="img/CPPSoloLearn.jpg"></a>'],
-
+                  cCertificates: [],
                   pCertificates: [],
                   phpCertificates: [],
 
@@ -45,8 +39,7 @@
                   jsCertificates: [],
                   jCertificates: [],
                   sqlCertificates:[],
-
-                  engCertificates: ['<a href="https://simpler.link/c/mGl47"><img src="img/eng1.png" alt="English Elementary"></a>']
+                  engCertificates: []
 
                 },
 
@@ -126,6 +119,9 @@
             readJSON("json/javascript.json", 'javascript');
             readJSON("json/java.json", 'java');
             readJSON("json/php.json", 'php');
+            readJSON("json/eng.json", 'eng');
+            readJSON("json/cpp.json", 'cpp');
+
 
             setTimeout(() => {
               createListCertificates();

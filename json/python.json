@@ -2,7 +2,7 @@
     "1": {
         "type": "a",
         "href": "https://www.sololearn.com/Certificate/1073-7148489/pdf/",
-        "image": "https://www.sololearn.com/Certificate/1073-7148489/jpg/",
+        "image": "img/Python3Sololearn.jpg",
         "alt": "Основы Python 3"
     },
 
@@ -25,5 +25,12 @@
         "href": "",
         "image": "pdf/Python3.pdf",
         "alt": ""
+    },
+
+    "5": {
+        "type": "a",
+        "href": "https://www.sololearn.com/Certificate/1157-7148489/pdf/",
+        "image": "img/PythonBSololearn.jpg",
+        "alt": "Python for Beginners"
     }
 }
