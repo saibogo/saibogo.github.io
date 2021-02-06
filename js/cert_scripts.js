@@ -54,7 +54,7 @@
                   var resultIframe = result.filter((a) => a.includes('</iframe>'));
 
                   //Дальнейшее необходимо для выравнивания
-                  if (resultIframe.length > 0 && (resultNoIframe.length > 0 && resultNoIframe.length % 2 != 0)) {
+                  while (resultIframe.length > 0 && (resultNoIframe.length > 0 && resultNoIframe.length % 3 != 0)) {
                     resultNoIframe.push('<a href="#"><img id="hidden-image" src="img/background/background1.jpg"></a>');
                   }
 
