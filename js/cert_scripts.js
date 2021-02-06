@@ -166,7 +166,7 @@
                 if (jsonObject[key]["type"] === "a") {
                   result.push('<a href="' + jsonObject[key]["href"] + '"><img src="' + jsonObject[key]["image"] + '" alt="' + jsonObject[key]["alt"] + '"></a>');
                 } else {
-                  result.push('<iframe src="' + jsonObject[key]["image"] + '"></iframe>');
+                  result.push('<iframe src="' + jsonObject[key]["image"] + '#zoom=65"></iframe>');
                 }
               }
               return result;

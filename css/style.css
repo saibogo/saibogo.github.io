@@ -131,7 +131,7 @@ iframe{
   width: 27%;
   margin-left: 4%;
   margin-top: 2%;
-  height: calc(100vw * 0.3);
+  height: calc(100vw * 0.35);
 }
 
 div#footer > h3{
@@ -193,6 +193,23 @@ li > a:hover {
 
 /* For different screen-size*/
 
+
+@media (max-width: 1100px) {
+  a > img{
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 2%;
+   }
+
+   iframe{
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 2%;
+    height: calc(100vw * 0.5);
+  }
+
+}
+
 @media (max-width: 760px) {
   .navigation-item {
     font-size: 1em;
@@ -205,6 +222,20 @@ li > a:hover {
   .repo-link {
     font-size: 1.2em;
   }
+
+  a > img{
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 3%;
+   }
+
+   iframe{
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 2%;
+    height: calc(100vw * 1.2);
+  }
+
 }
 
 @media (max-width: 550px) {
