@@ -32,5 +32,12 @@
         "href": "https://www.sololearn.com/Certificate/1157-7148489/pdf/",
         "image": "img/PythonBSololearn.jpg",
         "alt": "Python for Beginners"
+    },
+
+    "6": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/course/en/7148489/1158/landscape/png",
+        "image": "img/P3InterSololearn.png",
+        "alt": "Intermediate Python"
     }
 }
