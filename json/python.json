@@ -39,5 +39,12 @@
         "href": "https://www.sololearn.com/certificates/course/en/7148489/1158/landscape/png",
         "image": "img/P3InterSololearn.png",
         "alt": "Intermediate Python"
+    },
+
+    "7": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/course/en/7148489/1159/landscape/png",
+        "image": "img/PDSSololearn.png",
+        "alt": "Python Data Structures"
     }
 }
