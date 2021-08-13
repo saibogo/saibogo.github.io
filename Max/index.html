@@ -1,7 +1,43 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/cert_scripts.js"> 
+        </script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/max.css">
+        <title>Saibogo GitHub</title>
     </head>
     <body>
-        <h1>Жил был кот...</h1>
+        <script src="../js/max.js"></script>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="/img/max1.jpg" style="width:100%">
+                <div class="text">Жил был рыжий кот</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="/img/max2.jpg" style="width:100%">
+                <div class="text">Любил лежать посреди прохода, чтобы ему почесали пузико</div>
+            </div>
+  
+  
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
     </body>
 </html>
