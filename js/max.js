@@ -1,28 +1,14 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+var numbersPhotos = 2;
+var replaceInterval = 8000;
+let captions = ["Жил-был рыжий кот...", "Любил, чтобы ему чесали пузяку"];
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+function showSlides() {
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    var slide = document.getElementById("photo");
+    var nameFile = "img/max" + (slideIndex + 1) + ".jpg";
+    document.getElementsByTagName('h2')[0].innerHTML = captions[slideIndex];
+    slide.setAttribute("src", nameFile);
+    slideIndex = (slideIndex + 1) % numbersPhotos;
+    setTimeout(showSlides, replaceInterval);
 }
