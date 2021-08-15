@@ -14,9 +14,17 @@ function showSlides() {
     setTimeout(showSlides, replaceInterval);
 }
 
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+
 function loop_print(pattern) {
     for(let i = 0; i < pattern.length; i++) {
         document.getElementsByTagName('h2')[0].innerHTML = pattern.slice(0, i + 1);
-        sleep(typingInterval);
+        sleep(typingInterval);     
     }
 }
