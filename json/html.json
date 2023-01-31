@@ -25,5 +25,11 @@
         "href": "https://www.sololearn.com/Certificate/CT-DNKHKPOR/jpg",
         "image": "img/WebSoloLearn.jpg",
         "alt": "Основы WEB"
+    },
+    "5": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/CT-NXCBNNVU/jpg",
+        "image": "img/Responsive_WEB.jpg",
+        "alt": "Адаптивный дизайн. Основы"
     }
 }
