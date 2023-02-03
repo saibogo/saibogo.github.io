@@ -46,5 +46,12 @@
         "href": "https://www.sololearn.com/certificates/course/en/7148489/1159/landscape/png",
         "image": "img/PDSSololearn.png",
         "alt": "Python Data Structures"
+    },
+
+    "8": {
+        "type": "a",
+        "href": "https://netology.ru/sharing/6a349cc6d5afb3b4ec7852ef6da61e2d?utm_source=social&utm_campaign=achievements",
+        "image": "img/python_base_neto.jpg",
+        "alt": "Python Base from Netology"
     }
 }
