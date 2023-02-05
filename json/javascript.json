@@ -4,5 +4,11 @@
         "href": "https://www.sololearn.com/Certificate/1024-7148489/jpg/",
         "image": "img/JSSololearn.jpg",
         "alt": "Основы JavaScript"
+    },
+    "2": {
+        "type": "a",
+        "href": "https://netology.ru/sharing/a61a8414f735b2c8785c5f8852843ba5?utm_source=social&utm_campaign=achievements",
+        "image": "img/js_neto.jpg",
+        "alt": "Основы JavaScript"
     }
 }
