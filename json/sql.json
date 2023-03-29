@@ -10,5 +10,11 @@
         "href": "",
         "image": "pdf/Neto_SQL.pdf",
         "alt": "SQL Base Concepts"
+    },
+    "3": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/CC-PHUHHWE9",
+        "image": "img/SQL_intermediate.jpg",
+        "alt": "SQL Intermediate"
     }
 }
