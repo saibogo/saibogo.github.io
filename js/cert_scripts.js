@@ -1,5 +1,6 @@
 
              var structure = [['cpp', 'C/C++', 'cCertificates'],
+             ['c_sharp', 'C#', 'cSharpCertificates'],
              ['python', 'Python', 'pCertificates'],
              ['html', 'HTML+CSS3+JS', 'hCertificates'],
              ['intel', 'Intel', 'iCertificates'],
@@ -16,6 +17,7 @@
                   aCertificates: [],
                   hCertificates: [],
                   cCertificates: [],
+                  cSharpCertificates: [],
                   pCertificates: [],
                   phpCertificates: [],
 
@@ -96,6 +98,7 @@
             var listMenu = document.getElementById('navigator');
             var listElems = {
               cpp: 'baseHandler(\'cCertificates\')',
+              c_sharp: 'baseHandler(\'cSharpCertificates\')',
               python: 'baseHandler(\'pCertificates\')',
               html: 'baseHandler(\'hCertificates\')',
               intel: 'baseHandler(\'iCertificates\')',
@@ -121,6 +124,7 @@
             readJSON("json/php.json", 'php');
             readJSON("json/eng.json", 'eng');
             readJSON("json/cpp.json", 'cpp');
+            readJSON("json/c_sharp.json", 'c_sharp');
 
 
             setTimeout(() => {
