@@ -22,5 +22,11 @@
         "href": "https://www.sololearn.com/certificates/CC-KFTHM6AD",
         "image": "img/intro_to_sql.jpg",
         "alt": "Introduction To SQL"
+    },
+    "5": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/CC-IQVICCAF",
+        "image": "img/programming_for_data.jpg",
+        "alt": "Base SQL"
     }
 }
