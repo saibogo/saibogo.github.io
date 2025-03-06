@@ -59,5 +59,11 @@
         "href": "",
         "image": "pdf/hexlet_python_start.pdf",
         "alt": "Подготовительные курсы Python на Hexlet"
+    },
+    "10": {
+        "type": "a",
+        "href": "https://www.sololearn.com/certificates/CC-OQ5AHL1F",
+        "image": "img/Python_Developer_Sololearn.jpg",
+        "alt": "Python Developer"
     }
 }
